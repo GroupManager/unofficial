@@ -1,5 +1,5 @@
 name: GroupManager
-version: GMBuildVer (Phoenix)
+version: v0.1.0
 main: org.anjocaido.groupmanager.GroupManager
 website: http://ess.khhq.net/wiki/Group_Manager
 description: Provides on-the-fly system for permissions system created by Nijikokun. But all in memory, and with flat-file saving schedule.
@@ -7,6 +7,7 @@ authors:
   - AnjoCaido
   - Gabriel Couto
   - ElgarL
+  - Xadzkon
 commands:
   manuadd:
     description: Moves a player to desired group (Adds to the file if does not exist).

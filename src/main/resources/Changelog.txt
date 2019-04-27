@@ -238,3 +238,9 @@ v2.1:
 	- Fix Overloaded and non-overloaded users to report correctly for group tests.
 	- Prevent inherited group permission negations overriding higher level group perms.
 	- Fix 'manudel' so it correctly deletes the user.
+
+Versions from here are for the GroupManager++ fork.
+
+v0.1.0:
+    - Compile against Spigot 1.13.2
+    - Fixed .length() to .size()
