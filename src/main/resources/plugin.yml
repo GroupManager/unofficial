@@ -1,5 +1,6 @@
 name: GroupManager
-version: v0.2.0
+version: 0.2.0
+api-version: 1.14
 main: org.anjocaido.groupmanager.GroupManager
 website: http://ess.khhq.net/wiki/Group_Manager
 description: Provides on-the-fly system for permissions system created by Nijikokun. But all in memory, and with flat-file saving schedule.
