@@ -5,3 +5,6 @@ GroupManager was one of the first permission plugins ever available for Bukkit. 
 
 Please visit our Spigot page for more info:
 https://www.spigotmc.org/resources/groupmanager.38875/
+
+Maven repository:
+https://raw.github.com/GroupManager/GroupManager/maven
