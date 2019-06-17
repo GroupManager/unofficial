@@ -20,6 +20,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -573,9 +574,11 @@ public class GroupManager extends JavaPlugin {
 				sender.sendMessage(ChatColor.YELLOW + "You changed player '" + auxUser.getLastName() + "' to default settings.");
 
 				// If the player is online, this will create new data for the user.
-				targetPlayer = this.getServer().getPlayer(auxUser.getLastName());
-				if (targetPlayer != null)
-					BukkitPermissions.updatePermissions(targetPlayer);
+				if(auxUser.getUUID() != null) {
+					targetPlayer = this.getServer().getPlayer(UUID.fromString(auxUser.getUUID()));
+					if (targetPlayer != null)
+						BukkitPermissions.updatePermissions(targetPlayer);
+				}
 
 				return true;
 
