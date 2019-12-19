@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: bstats-bukkit-1.4.jar lombok-1.12.2.jar snakeyaml-1.21.jar
+

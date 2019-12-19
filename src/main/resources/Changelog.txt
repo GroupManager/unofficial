@@ -244,3 +244,12 @@ Versions from here are for the GroupManager++ fork.
 v0.1.0:
     - Compile against Spigot 1.13.2
     - Fixed .length() to .size()
+
+v0.2.0:
+    - Fixed version numbers
+    - Updated for Bukkit API 1.14
+    - Removed non-working metrics
+
+v0.3.0:
+    - Updated for Bukkit API 1.15.1
+    - Some deprecated code has been updated
