@@ -2196,9 +2196,16 @@ public class GroupManager extends JavaPlugin {
 		players = this.getServer().matchPlayer(playerName);
 		if (players.isEmpty()) {
 			// Check for an offline player (exact match).
+			for (OfflinePlayer player : Bukkit.getOfflinePlayers()) {
+				if (player.getName().equals(playerName)) {
+					match.add(player.getUniqueId().toString());
+				}
+			}
+			
+			/*
 			if (Arrays.asList(this.getServer().getOfflinePlayers()).contains(Bukkit.getOfflinePlayer(playerName))) {
-				//match.add(Bukkit.getOfflinePlayer(playerName).getName()); //.getUniqueId().toString());
-				match.add(Bukkit.getOfflinePlayer(Bukkit.getPlayer(playerName).getUniqueId()).getName()); //.getUniqueId().toString());
+				match.add(Bukkit.getOfflinePlayer(playerName).getName()); //.getUniqueId().toString());
+				//match.add(Bukkit.getOfflinePlayer(Bukkit.getPlayer(playerName).getUniqueId()).getName()); //.getUniqueId().toString());
 			} else {
 				// look for partial matches
 				for (OfflinePlayer offline : this.getServer().getOfflinePlayers()) {
@@ -2206,6 +2213,7 @@ public class GroupManager extends JavaPlugin {
 						match.add(offline.getName()); //.getUniqueId().toString());
 				}
 			}
+			*/
 
 		} else {
 			for (Player player : players) {
