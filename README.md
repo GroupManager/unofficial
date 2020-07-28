@@ -1,11 +1,7 @@
-![# GroupManager](https://i.imgur.com/h1WW3ZE.png)
+# Unofficial GroupManager Updates
 
-![GitHub All Releases](https://img.shields.io/github/downloads/GroupManager/GroupManager/total.svg)
+This repository contains the code and most importantly the issues for the unofficial GroupManager updates by a previous maintainer.
 
-GroupManager was one of the first permission plugins ever available for Bukkit. Although there are plugins such as LuckPerms with more functionality than GroupManager, and the official support and development of Essentials plugins has ended, GroupManager is still preferred over other plugins by lots of server administrators.
+One of the original developers of GroupManager, ElgarL has returned and will be updating the plugin instead.
 
-Please visit our Spigot page for more info:
-https://www.spigotmc.org/resources/groupmanager.38875/
-
-Maven repository:
-https://raw.github.com/GroupManager/GroupManager/maven
+# https://github.com/ElgarL/GroupManager/
